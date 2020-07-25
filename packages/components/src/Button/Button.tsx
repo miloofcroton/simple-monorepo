@@ -1,5 +1,13 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 
-const Button = (): ReactElement => <button type="submit">Button</button>;
+interface Props {
+  onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+}
+
+const Button: React.FC<Props> = ({ onClick }) => (
+  <button type="button" onClick={onClick}>
+    Button
+  </button>
+);
 
 export default Button;

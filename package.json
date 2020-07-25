@@ -33,6 +33,7 @@
     "workspaces:build": "yarn --cwd packages/web-app build",
     "workspaces:start": "yarn --cwd packages/web-app start",
     "bootstrap": "lerna bootstrap",
+    "dev": "lerna run dev --stream",
     "start": "lerna run start --stream",
     "lint": "eslint ./packages --ext .js,.jsx,.ts,.tsx",
     "prettify": "prettier --write './packages/**/pages/**/*.{js,jsx,ts,tsx}'",

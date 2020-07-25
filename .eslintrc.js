@@ -64,8 +64,14 @@ module.exports = {
       "mjs": "never"
     }],
 
+    "@typescript-eslint/no-unused-vars": ["warn", {
+      "args": "none",
+      "varsIgnorePattern": "_"
+    }],
+
     "react/jsx-filename-extension": [1, {
       "extensions": [".jsx", ".tsx"]
-    }]
+    }],
+    "react/prop-types": ["off"]
   },
 }
