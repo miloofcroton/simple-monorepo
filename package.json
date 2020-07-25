@@ -13,6 +13,9 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2",
     "lerna": "^3.18.1"
   },
   "dependencies": {
@@ -23,6 +26,9 @@
     "old:build": "yarn --cwd packages/web-app build",
     "old:start": "yarn --cwd packages/web-app start",
     "bootstrap": "lerna bootstrap",
-    "start": "lerna run start --stream"
+    "start": "lerna run start --stream",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prettify": "prettier --write './packages/**/*.{js,jsx,ts,tsx}'",
+    "test": "jest"
   }
 }
