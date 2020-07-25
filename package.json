@@ -19,14 +19,14 @@
     "lerna": "^3.18.1",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "24.0.19",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
     "jest": "^24.9.0",
-    "ts-jest": "^24.1.0"
+    "ts-jest": "^24.1.0",
+    "typescript": "3.6.4"
   },
   "dependencies": {
-    "typescript": "3.6.4"
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1"
   },
   "scripts": {
     "old:dev": "yarn --cwd packages/web-app dev",
