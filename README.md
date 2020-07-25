@@ -15,6 +15,38 @@ Deploy using [Vercel](https://vercel.com):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/with-yarn-workspaces)
 
+## Docker
+
+The `dockerfile` is the simplest way to run Next.js app in docker, and the size of output image is `173MB`. However, for an even smaller build, you can do multi-stage builds with `dockerfile.multistage`. The size of output image is `85MB`.
+
+You can check the [Example Dockerfile for your own Node.js project](https://github.com/mhart/alpine-node/tree/43ca9e4bc97af3b1f124d27a2cee002d5f7d1b32#example-dockerfile-for-your-own-nodejs-project) section in [mhart/alpine-node](https://github.com/mhart/alpine-node) for more details.
+
+
+Build it with docker:
+
+```bash
+# build
+docker build -t next-app .
+# or, use multi-stage builds to build a smaller docker image
+docker build -t next-app -f ./Dockerfile.multistage .
+```
+
+Alternatively you can add these commands as scripts to your package.json and simply run
+
+`yarn build-docker`
+or
+`yarn build-docker-multistage`
+
+Run the docker image:
+
+```bash
+docker run --rm -it \
+  -p 3000:3000 \
+  next-app
+```
+
+or use `yarn build-docker-multistage`
+
 
 ## Usage
 
