@@ -36,13 +36,35 @@ module.exports = {
       }
     }
   },
+  env: {
+    node: true,
+		es6: true,
+		jest: true,
+		browser: true,
+    // 'cypress/globals': true,
+  },
+  globals: {
+    // Cypress: true,
+    // cy: true,
+    // assert: true,
+  },
   rules: {
     "semi": ["error", "always"],
     "arrow-body-style": ["off"],
+
     "@typescript-eslint/no-explicit-any": ["warn"],
     "@typescript-eslint/explicit-function-return-type": ["warn"],
+
+    "import/extensions": ["error", "ignorePackages", {
+      "ts": "never",
+      "tsx": "never",
+      "js": "never",
+      "jsx": "never",
+      "mjs": "never"
+    }],
+
     "react/jsx-filename-extension": [1, {
-      "extensions": [".tsx"]
+      "extensions": [".jsx", ".tsx"]
     }]
   },
 }
