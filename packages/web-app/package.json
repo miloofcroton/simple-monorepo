@@ -1,0 +1,24 @@
+{
+  "name": "@namespace/web-app",
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "typescript": "3.7.3"
+  },
+  "dependencies": {
+    "@namespace/foo": "1.0.0",
+    "@namespace/bar": "1.0.0",
+    "next": "latest",
+    "next-transpile-modules": "^3.0.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}

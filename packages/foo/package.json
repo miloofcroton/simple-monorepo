@@ -1,0 +1,9 @@
+{
+  "name": "@namespace/foo",
+  "version": "1.0.0",
+  "license": "ISC",
+  "peerDependencies": {
+    "@types/node": "12.11.1",
+    "typescript": "3.6.4"
+  }
+}
