@@ -1,12 +1,15 @@
-import foo from '@namespace/foo'
-import Bar from '@namespace/bar'
+import React from 'react';
+import foo from '@namespace/foo';
+import Bar from '@namespace/bar';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div>
       Imported modules from another workspace:
       <pre>{foo}</pre>
       <Bar />
     </div>
-  )
-}
+  );
+};
+
+export default Home;

@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Bar = () => <strong>bar</strong>
+const Bar: React.FC = () => <strong>bar</strong>;
 
-export default Bar
+export default Bar;

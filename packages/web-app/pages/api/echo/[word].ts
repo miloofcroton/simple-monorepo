@@ -1,5 +1,7 @@
-import { NextApiRequest, NextApiResponse } from 'next'
+import { NextApiRequest, NextApiResponse } from 'next';
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  return res.send(req.query.word)
-}
+const handler = (req: NextApiRequest, res: NextApiResponse): void => {
+  return res.send(req.query.word);
+};
+
+export default handler;
