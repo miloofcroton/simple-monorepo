@@ -22,6 +22,7 @@ module.exports = {
 			jsx: true
 		}
   },
+  ignorePatterns: ["**/node_modules/*"],
   settings: {
     "react": {
       "version": "detect"

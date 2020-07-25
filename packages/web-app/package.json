@@ -31,6 +31,7 @@
   "dependencies": {
     "@namespace/foo": "1.0.0",
     "@namespace/bar": "1.0.0",
+    "@namespace/components": "1.0.0",
     "next": "latest",
     "next-transpile-modules": "^3.0.2",
     "react": "^16.8.3",

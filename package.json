@@ -34,8 +34,9 @@
     "workspaces:start": "yarn --cwd packages/web-app start",
     "bootstrap": "lerna bootstrap",
     "start": "lerna run start --stream",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint ./packages --ext .js,.jsx,.ts,.tsx",
     "prettify": "prettier --write './packages/**/pages/**/*.{js,jsx,ts,tsx}'",
+    "types:check": "tsc",
     "test": "jest"
   }
 }

@@ -5,6 +5,7 @@
 // https://www.npmjs.com/package/next-transpile-modules
 const withTM = require('next-transpile-modules')([
   'bar',
+  'components',
 ]);
 
 module.exports = withTM();
