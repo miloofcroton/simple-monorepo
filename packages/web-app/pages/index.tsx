@@ -2,8 +2,9 @@ import React from 'react';
 import foo from '@namespace/foo';
 import Bar from '@namespace/bar';
 import { Button, Input } from '@namespace/components';
+import { NextPage } from 'next';
 
-const Home: React.FC = () => {
+const Home: NextPage = () => {
   const [wordQuery, setWordQuery] = React.useState<string>('');
   const [apiResult, setApiResult] = React.useState<string>('');
 
